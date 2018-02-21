@@ -239,6 +239,16 @@ export interface AndroidActionBarSettings {
  * Represents the navigation (a.k.a. "back") button.
  */
 export class NavigationButton extends ActionItem {
+    //@private
+    /**
+     * @private
+     */
+    _onVisibilityPropertyChanged(value: string): void;
+    /**
+     * @private
+     */
+    _navigationItem?: any
+    //@endprivate
 
 }
 

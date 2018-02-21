@@ -1,6 +1,6 @@
 ﻿import * as actionTestsCommon from "./action-bar-tests-common";
 import * as TKUnit from "../../TKUnit";
-import { ActionItem } from "tns-core-modules/ui/action-bar";
+import { ActionItem, NavigationButton } from "tns-core-modules/ui/action-bar";
 import { Visibility } from "tns-core-modules/ui/enums";
 import { Button } from "tns-core-modules/ui/button";
 
@@ -20,7 +20,7 @@ export function test_actionItem_visibility() {
 }
 
 export function test_navigationButton_visibility() {
-    const actionItem = new ActionItem();
+    const actionItem = new NavigationButton();
     actionItem.icon = "~/small-image.png";
     const page = actionTestsCommon.createPageAndNavigate();
     page.actionBar.navigationButton = actionItem;

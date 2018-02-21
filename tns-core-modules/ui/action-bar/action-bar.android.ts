@@ -103,7 +103,9 @@ export class AndroidActionBarSettings implements AndroidActionBarSettingsDefinit
 }
 
 export class NavigationButton extends ActionItem {
-    //
+    public _onVisibilityPropertyChanged(visibility: string): void {
+        //
+    }
 }
 
 export class ActionBar extends ActionBarBase {
